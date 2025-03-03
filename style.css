@@ -427,6 +427,8 @@ input[type="submit"] {
     flex-direction: column;
     align-items: end;
     height: auto;
+    left: 0;
+    width: 100%;
   }
   .nav ul {
     display: flex;
@@ -487,6 +489,9 @@ input[type="submit"] {
   #projects h2 {
     font-size: 1.8rem;
   }
+  #skill {
+    min-height: auto;
+  }
   .skillContainer {
     flex-direction: column;
     gap: 20px;
@@ -526,5 +531,54 @@ input[type="submit"] {
   }
   #contact {
     padding: 50px 15px 40px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    margin-top: 0;
+    padding-top: 280px;
+  }
+  .nav {
+    height: auto;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  #home {
+    padding-top: 20px;
+    margin-top: 30px;
+    min-height: 100vh;
+  }
+  section {
+    min-height: auto;
+    margin-bottom: 0;
+  }
+  #about {
+    padding: 30px 10px;
+    margin-bottom: 0;
+  }
+  #skill {
+    padding: 30px 10px;
+  }
+  .aboutContainer {
+    gap: 15px;
+    padding-bottom: 15px;
+  }
+  #about h5,
+  #skill h5 {
+    margin-top: 10px;
+  }
+
+  #about h2,
+  #skill h2 {
+    margin-bottom: 10px;
+  }
+  .aboutContainer p {
+    margin-bottom: 10px;
   }
 }
