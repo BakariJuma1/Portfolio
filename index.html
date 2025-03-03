@@ -1,33 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
     <title>Portfolio</title>
-</head>
-<body>
-    <div class="nav">
-        <a href="home">HOME</a>
-        <a href="about">ABOUT</a>
-        <a href="skills">SKILLS</a>
-        <a href="projects">PROJECTS</a>
-        <a href="contact">CONTACT</a>
-    </div>
-    <div class="one">
-        <p>LETS BUILD SOMETHING BEAUTIFUL</p>
-        <h1 class="top">Hi i am Bakari Juma</h1>
-        <h2>Iam a</h2>
-        <h1>Software Engineer</h1>
-        <p>I am a Fullstack Software Engineering student at Moringa School, specializing in building dynamic and responsive web applications. Proficient in HTML, CSS, and JavaScript, I am passionate about creating clean, efficient, and user-friendly digital experiences.
+    <script
+      src="https://kit.fontawesome.com/9f687dea4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skill">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
 
-            This portfolio showcases my journey, projects, and skills as I continue to grow and explore new technologies. I am committed to leveraging technology to solve real-world problems and deliver impactful solutions.
-            
-            Let’s connect and collaborate to bring innovative ideas to life!</p>
-    </div>
-    <div class="two"></div>
-    <div class="three"></div>
-    <div class="four"></div>
-    <div class="five"></div>
-</body>
+    <section id="home">
+      <span>LETS BUILD SOMETHING BEAUTIFUL</span>
+      <h1 class="top">Hi, i am Bakari Juma</h1>
+      <h2>I am a</h2>
+      <h1>Software Engineer</h1>
+      <p class="myP">
+        I am a Fullstack Software Engineering student at Moringa School, skilled
+        in HTML, CSS, and JavaScript. Passionate about creating responsive and
+        user-friendly web applications, my portfolio highlights my journey,
+        projects, and skills. I aim to leverage technology for real-world
+        solutions and impactful innovation. Let’s connect and collaborate!
+      </p>
+      <button autofocus>Hire Me</button>
+    </section>
+
+    <section id="about">
+      <div class="aboutContainer">
+        <h5>About me</h5>
+        <h2>Who am i ?</h2>
+        <p>
+          I’m a software engineer and full-stack developer with experience in
+          HTML,CSS and JavaScript
+        </p>
+        <p>
+          My approach combines technical excellence with creative
+          problem-solving, ensuring that the applications I build are not only
+          functional but also intuitive and enjoyable to use.
+        </p>
+      </div>
+    </section>
+
+    <section id="skill">
+      <h5>Skills</h5>
+      <h2>What i can do</h2>
+
+      <div class="skillContainer">
+        <div class="htmlContainer">
+          <i class="fa-brands fa-html5"></i>
+          <span>HTML</span>
+        </div>
+        <div class="cssContainer">
+          <i class="fa-brands fa-css3-alt"></i>
+          <span>CSS</span>
+        </div>
+        <div class="jsContainer">
+          <i class="fa-brands fa-js"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="reactContainer">
+          <i class="fa-brands fa-react"></i>
+          <span>React</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h5>Projects</h5>
+      <h2>Some of my recent projects</h2>
+
+      <div class="containerParent">
+        <div class="containerOne"></div>
+        <div class="containerTwo"></div>
+        <div class="containerThree"></div>
+        <div class="containerFour"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contactMe">
+        <h2>Contact Me</h2>
+        <h5>Get In Touch</h5>
+        <span>
+          Reach out to me for any freelancing opportunities , contract work or
+          just to say hi.
+        </span>
+      </div>
+
+      <div class="level">
+        <form action="">
+          <label for="">Name:</label>
+          <input type="text" />
+          <label for="">Phone Number:</label>
+          <input type="text" name="" id="" />
+          <label for="">Subject:</label>
+          <input type="text" />
+          <label for="">Message:</label>
+          <input type="text" />
+          <input type="submit" value="submit" />
+        </form>
+      </div>
+    </section>
+  </body>
 </html>

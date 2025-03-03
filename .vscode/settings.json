@@ -1,6 +1,5 @@
 {
-    "cSpell.words": [
-        "Bakari",
-        "Moringa"
-    ]
+  "cSpell.words": ["Bakari", "Moringa"],
+  "liveServer.settings.port": 5502,
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }
