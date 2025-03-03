@@ -406,12 +406,27 @@ input[type="submit"] {
 }
 @media screen and (max-width: 480px) {
   body {
-    padding-top: 70px;
+    padding-top: 60px;
+  }
+  section {
+    padding: 0.5rem;
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: 0;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+  }
+  #about,
+  #skill,
+  #projects,
+  #contact {
+    padding: 40px 10px;
   }
   .nav {
     margin: 0.5rem 0;
     flex-direction: column;
     align-items: end;
+    height: auto;
   }
   .nav ul {
     display: flex;
@@ -432,23 +447,49 @@ input[type="submit"] {
     font-weight: bold;
   }
 
-  section {
+  #home {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    height: auto;
     min-height: 100vh;
-    padding: 2rem;
-    box-sizing: border-box;
+    overflow-y: auto;
+    position: relative;
   }
   #home h1 {
     font-size: 2rem;
+    margin-bottom: 5px;
   }
   #home h2 {
     font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  #home span {
+    margin-bottom: 8px;
   }
   #home p {
+    margin: 10px auto;
     font-size: 0.85rem;
     padding: 0 15px;
   }
+  #home button {
+    margin-top: 10px;
+  }
+  #about {
+    padding-bottom: 10px;
+    margin-bottom: -30px;
+  }
+  .aboutContainer {
+    gap: 20px;
+  }
+  #projects h2 {
+    font-size: 1.8rem;
+  }
   .skillContainer {
     flex-direction: column;
+    gap: 20px;
   }
   .htmlContainer,
   .cssContainer,
@@ -462,14 +503,28 @@ input[type="submit"] {
   .containerParent {
     flex-direction: column;
   }
+  #projects h2,
+  #skill h2,
+  .aboutContainer h2 {
+    margin-bottom: 10px;
+  }
+  #projects h5,
+  #skill h5,
+  .aboutContainer h5 {
+    margin-top: 10px;
+  }
   input[type="text"],
   input[type="submit"],
   select {
     width: 100%;
+    margin: 5px 0;
     padding-left: 20px;
   }
 
   .level {
     padding-left: 20px;
+  }
+  #contact {
+    padding: 50px 15px 40px;
   }
 }
