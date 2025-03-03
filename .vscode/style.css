@@ -68,21 +68,15 @@ section {
 .hamburger {
   display: none;
   cursor: pointer;
-  padding: 10px;
-  z-index: 1001;
-  background: transparent;
-  border: none;
-  outline: none;
 }
 .bar1,
 .bar2,
 .bar3 {
-  width: 30px;
+  width: 25px;
   height: 3px;
-  margin: 6px 0;
+  margin: 5px 0;
   transition: 0.4s;
   background-color: white;
-  border-radius: 2px;
 }
 html {
   scroll-behavior: smooth;
@@ -454,39 +448,20 @@ input[type="submit"] {
     left: -100%;
     top: 70px;
     flex-direction: column;
-    background-color: #e96767;
-    width: 60%;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
     text-align: center;
-    transition: 0.3s ease-in-out;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.2);
-    height: auto;
-    max-height: 60vh;
-    z-index: 999;
-    padding: 20px 0;
-    overflow-y: auto;
-    border-radius: 0 10px 10px 0;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .navMenu.active {
     left: 0;
   }
   .navMenu li {
-    margin: 1.5rem 0;
-    width: 100%;
-  }
-  .navMenu li a {
-    padding: 1rem;
-    font-size: 1.2rem;
-    display: inline-block;
-    width: 80%;
-    border-radius: 4px;
-  }
-  .navMenu li a:active {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-bottom: 2px solid #ff6b6b;
+    margin: 2.5rem 0;
   }
   .hamburger.active .bar1 {
     transform: rotate(-45deg) translate(-5px, 6px);
-    background-color: #ff6b6b;
   }
 
   .hamburger.active .bar2 {
@@ -495,7 +470,6 @@ input[type="submit"] {
 
   .hamburger.active .bar3 {
     transform: rotate(45deg) translate(-5px, -6px);
-    background-color: #ff6b6b;
   }
 
   #home {
