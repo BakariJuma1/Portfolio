@@ -533,10 +533,11 @@ input[type="submit"] {
     padding: 50px 15px 40px;
   }
 }
+
 @media screen and (max-width: 320px) {
   body {
     margin-top: 0;
-    padding-top: 280px;
+    padding-top: 0;
   }
   .nav {
     height: auto;
@@ -545,17 +546,21 @@ input[type="submit"] {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
   }
   .nav ul {
     flex-direction: column;
   }
   #home {
-    padding-top: 20px;
-    margin-top: 30px;
-    min-height: 100vh;
+    padding-top: 10px;
+    margin-top: 250px;
+    min-height: auto;
+    height: auto;
   }
   section {
     min-height: auto;
+    height: auto;
+    padding: 30px 10px;
     margin-bottom: 0;
   }
   #about {
@@ -565,6 +570,11 @@ input[type="submit"] {
   #skill {
     padding: 30px 10px;
   }
+  #projects,
+  #contact {
+    padding: 30px 10px;
+    margin: 0;
+  }
   .aboutContainer {
     gap: 15px;
     padding-bottom: 15px;
@@ -573,7 +583,6 @@ input[type="submit"] {
   #skill h5 {
     margin-top: 10px;
   }
-
   #about h2,
   #skill h2 {
     margin-bottom: 10px;
