@@ -34,6 +34,7 @@ body {
   padding: 0;
   display: flex;
   background-color: transparent;
+  flex: 1;
 }
 .nav li {
   float: none;
@@ -392,4 +393,51 @@ input[type="submit"] {
   background-color: #f2f2f2;
   padding: 20px;
   padding-left: 150px;
+}
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav li a {
+    padding: 1rem 0.5rem;
+  }
+  #home h1 {
+    font-size: 2rem;
+  }
+  #home h2 {
+    font-size: 1.2rem;
+  }
+  #home p {
+    font-size: 0.85rem;
+    padding: 0 15px;
+  }
+  .skillContainer {
+    flex-direction: column;
+  }
+  .htmlContainer,
+  .cssContainer,
+  .jsContainer,
+  .reactContainer {
+    padding: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .containerParent {
+    flex-direction: column;
+  }
+  input[type="text"],
+  input[type="submit"],
+  select {
+    width: 100%;
+    padding-left: 20px;
+  }
+
+  .level {
+    padding-left: 20px;
+  }
 }
