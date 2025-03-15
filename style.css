@@ -85,6 +85,18 @@ section {
   background-color: white;
   border-radius: 2px;
 }
+.cursor {
+  display: inline-block;
+  width: 10px;
+  background-color: black;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
