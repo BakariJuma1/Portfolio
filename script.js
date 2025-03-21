@@ -75,7 +75,13 @@ function sendMail() {
     subject: document.getElementById("subject").value,
     message: document.getElementById("message").value,
   };
-  emailjs
-    .send("service_vpruhmn", "template_teums1k", info)
-    .then(alert("Email sent succesfully"));
+  emailjs.send("service_vpruhmn", "template_teums1k", info).then(
+    function (response) {
+      alert("Email sent successfully!");
+      form.reset(); // Clear the form fields
+    },
+    function (error) {
+      alert("Failed to send email. Please try again later.");
+    }
+  );
 }
