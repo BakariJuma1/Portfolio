@@ -7,6 +7,17 @@
 
     <title>Portfolio</title>
     <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "gukBfNhbsADHyog8W",
+        });
+      })();
+    </script>
+    <script
       src="https://kit.fontawesome.com/9f687dea4d.js"
       crossorigin="anonymous"
     ></script>
@@ -41,7 +52,7 @@
         projects, and skills. I aim to leverage technology for real-world
         solutions and impactful innovation. Let’s connect and collaborate!
       </p>
-      <button autofocus>Hire Me</button>
+      <button autofocus id="hire">Hire Me</button>
     </section>
 
     <section id="about">
@@ -89,11 +100,24 @@
       <h2>Some of my recent projects</h2>
 
       <div class="containerParent">
-        <div class="containerOne"></div>
-        <div class="containerTwo"></div>
-        <div class="containerThree"></div>
-        <div class="containerFour"></div>
-      </div>
+        <div class="projectCard">
+          <h3>MiniCalender</h3>
+          <img src="" alt="">
+          <p>This is a web app that just from the name is a mini calender that uses the date object to get date,year,day dynamically</p>
+          <a href="https://bakarijuma1.github.io/Mini-Calender/" target="_blank">View MiniCalender</a>
+        </div>
+
+        <!-- <div class="projectCard">
+          <h3>Project 2</h3>
+          <p>A brief description of Project 2.</p>
+          <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </div>
+        <div class="projectCard">
+          <h3>Project 3</h3>
+          <p>A brief description of Project 3.</p>
+          <a href="https://github.com/yourusername/project3" target="_blank">View on GitHub</a>
+        </div>
+      -->
     </section>
 
     <section id="contact">
@@ -101,25 +125,33 @@
         <h2>Contact Me</h2>
         <h5>Get In Touch</h5>
         <span>
-          Reach out to me for any freelancing opportunities , contract work or
+          Reach out to me for any freelancing opportunities , contact work or
           just to say hi.
         </span>
       </div>
 
       <div class="level">
-        <form action="">
+        <form action="" id="formContainer">
           <label for="">Name:</label>
-          <input type="text" />
-          <label for="">Phone Number:</label>
-          <input type="text" name="" id="" />
-          <label for="">Subject:</label>
-          <input type="text" />
-          <label for="">Message:</label>
-          <input type="text" />
+          <input type="name" id="name" required />
+
+          <label for="">Phone Number</label>
+          <input type="text" name="phoneNumber" id="phoneNumber" required />
+
+          <label for="">Email</label>
+          <input type="email" id="email" name="email" required required />
+
+          <label for="">Subject</label>
+          <input type="text" id="subject" name="subject" required required />
+
+          <label for="">Message</label>
+          <textarea name="message" id="message" required required></textarea>
+
           <input type="submit" value="submit" />
         </form>
       </div>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>

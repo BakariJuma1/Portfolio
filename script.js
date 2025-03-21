@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const container = document.querySelector(".typeWriter");
 
 const careers = [
-  "Web Developer",
+  "Software Engineer",
   "Freelancer",
   "Designer",
   "Content Creator",
@@ -47,4 +47,35 @@ function updateText() {
     careerIndex = 0;
   }
   // setTimeout(updateText, 1000);
+}
+
+// clicking hire me takes you to contact me
+
+const hireMe = document.getElementById("hire");
+console.log(hireMe); //testing
+hireMe.addEventListener("click", headToContact);
+
+function headToContact() {
+  const contactSection = document.getElementById("contact");
+  contactSection.scrollIntoView({ behavior: "smooth" });
+}
+
+// event on the form submit
+
+const form = document.querySelector("#formContainer");
+
+form.addEventListener("submit", sendMail);
+console.log("been clicked");
+function sendMail() {
+  event.preventDefault();
+  let info = {
+    name: document.getElementById("name").value,
+    phoneNumber: document.getElementById("phoneNumber").value,
+    email: document.getElementById("email").value,
+    subject: document.getElementById("subject").value,
+    message: document.getElementById("message").value,
+  };
+  emailjs
+    .send("service_vpruhmn", "template_teums1k", info)
+    .then(alert("Email sent succesfully"));
 }
